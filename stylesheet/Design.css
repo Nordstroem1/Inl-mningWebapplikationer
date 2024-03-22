@@ -1,0 +1,61 @@
+.headerDiv{
+    display: inline-block;
+    text-align: center;
+}
+/* cursor blinking */
+@keyframes cursor{
+    100%{border-color: transparent;}
+}
+/* typing effect */
+@keyframes typing{
+    from{width:0px;}
+    to{width: 100%;}
+}
+.header{
+    font-size: 30px;
+    font-family: monospace;
+    letter-spacing: 2px;
+    color: white;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 3s, 
+        cursor 0.8s;
+        animation-fill-mode: forwards;
+}
+p{
+    color: white;
+    font-family: monospace;
+}
+.asideDiv a{
+    position: relative;
+    font-size: 15px;
+    color: rgb(238, 229, 229);
+    margin-top: 15px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding: 0 5px;
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+a:hover{
+    color: white;
+}
+a:hover:after{
+    width: 100%;
+}
+
+
