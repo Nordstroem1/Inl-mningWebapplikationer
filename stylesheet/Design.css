@@ -25,22 +25,7 @@
         cursor 0.8s;
         animation-fill-mode: forwards;
 }
-p{
-    color: white;
-    font-family: monospace;
-}
-.asideDiv a{
-    position: relative;
-    font-size: 15px;
-    color: rgb(238, 229, 229);
-    margin-top: 15px;
-    display: block;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    padding: 0 5px;
-}
+
 a:after{
     content: "";
     position: absolute;
@@ -58,4 +43,8 @@ a:hover:after{
     width: 100%;
 }
 
-
+/*När man hovrar över bilderna(3x3) så dyker en border upp*/
+.picDiv:hover{
+    border: 1.5px solid white;
+    transition: 0.2s;
+}

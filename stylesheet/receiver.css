@@ -1,0 +1,105 @@
+*{
+    margin:0px;
+}
+#divContainer{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+}
+#nobtnCounter{
+    position: absolute;
+    margin: 5px;
+}
+#gif-div{
+    background-image: url("../images/Donkey.gif");
+    margin-left: 27%;
+    margin-top: 3%;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius:125px;
+}
+#question{
+    position: absolute;
+    left: 50%;
+    margin-top: 15px;
+    transform: translateX(-50%);
+    color: black;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+#wrapper {
+    min-width: 600px;
+    display: block;
+    position: relative;
+    height: 450px;
+    width: 600px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    justify-content: center;
+    border: 1px black solid;
+}
+.btn-group button{
+    position: absolute;
+    color: white;
+    width: 150px;
+    height: inherit;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 0px solid black;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+.btn-group{
+    margin-top: 15%;
+    width: 100%;
+    height: 40px;
+}
+button:nth-child(1){
+    left: 100px;
+    background: lightblue;
+    border: 1px black solid;
+}
+button:nth-child(2){
+    background: white;
+    color: black;
+    border: 1px solid black;
+    transition: top 0.15s, left 0.15s;
+    left: 300px;
+    top: 362px;
+}
+div::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*
+#dynamicDiv{
+    padding: 10px;
+    background-color: aliceblue;
+    width: 590px;
+    height: auto;
+    max-height: 200px;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-top: 1%;
+    overflow-y: scroll;
+}
+#dynamicDiv::-webkit-scrollbar {
+    display: none;
+}
+
+#dynamicDiv p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+*/

@@ -1,0 +1,155 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+}
+
+/*kroppen av formen.*/
+form{
+    background-color: lightblue;
+    display: grid;
+    padding: 10px;
+    width: 60vw;
+    max-width: 450px;
+    max-height: 600px;
+    height: 60vw;
+    border: 2px solid black;
+    border-radius: 15px;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 40% 15% 15% 15% 10%;
+}
+#username{
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+}
+.usernamediv{
+    align-self: center;
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+
+#age{
+   grid-column: 2;
+   grid-row: 3; 
+   align-self: center;
+
+}
+.agelabel{
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+}
+.agelabeldiv{
+    align-self: center;
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+
+
+
+
+#city{
+    grid-column: 2;
+    grid-row: 4;
+    align-self: center;
+}
+.citylabel{
+    grid-column: 1;
+    grid-row: 4;
+    align-self: center;
+    justify-self: center;
+}
+.citylabeldiv{
+    align-self: center;
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+
+label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+    
+}
+input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    margin: 5px;
+    height: 40px;
+    width: 80%;
+    font-size: 17px;
+}
+*:focus{
+    border: 1px white solid;
+    outline: none;
+}
+
+/*allt med bild*/
+.imgdiv{
+    background-color: white;
+    display: flex;
+    justify-self: center;
+    grid-row: 1;
+    grid-column: 2;
+    height: 100%;
+    width: 80%;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    
+}
+#logoimg{
+    width: 80%;
+}
+
+/*Knappen och dess bild*/
+#submitbtn{
+    color: white;
+    grid-row: 5;
+    grid-column: 2;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("../images/naturebackround.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    text-shadow: 2px 1px black;
+    width: 220px;
+    height: 45px;
+}
+#submitbtn:hover{
+    border-color: white;
+}
+
+
+@media (max-width: 830px){
+    form{
+        width: 350px;
+        min-width: 300px;
+        min-height: 450px;
+    }
+    #submitbtn{
+        width: 100%;
+    }
+}

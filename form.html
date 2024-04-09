@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="stylesheet/form.css">
+</head>
+<body>
+    <!-- action = vart infon ska skickas, tex c# fil,backend, method = hur det skickas, Get = öppen info, post = känslig info-->
+        <form action="">
+            <div class="imgdiv">
+                <img id="logoimg" src="images/landscape.png" alt="nature">
+            </div>
+            <!--När man använder screenreader så är det kopplas-->
+            <div class="usernamediv">
+                <label for="username">Namn:</label>
+            </div>
+                <input type="text" id="username" placeholder="John Doe..." required>
+
+                <div class="agelabeldiv">    
+                     <label for="age">Age:</label>
+                </div>
+                <input type="number" id="age" placeholder="20..." required >
+            
+                <div class="citylabeldiv">    
+                    <label for="city">City:</label>
+                </div>
+                <input type="text" id="city" placeholder="Gothenburg..." required>
+
+                <button id="submitbtn">
+                    submit
+                </button>
+        </form>
+
+    <script src="scripts/person.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
