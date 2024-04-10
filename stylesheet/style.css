@@ -232,7 +232,7 @@ footer a{
         width: 100%;
     }
     .picDiv p{
-        font-size: 15px;
+        font-size: 20px;
     }
     #TitleTop10{
         font-size: 20px;
@@ -285,6 +285,13 @@ footer a{
         scroll-snap-align: start;
         height: 340px;
         margin-top: 3%;
+    }
+    .picDiv p{
+        font-size: 24px;
+        letter-spacing: 2px;
+        text-decoration: underline;
+        text-decoration-thickness: 2.5px;
+        text-underline-offset: 5px;
     }
     
     /*Skapa en grid för att kunna placera elementen*/

@@ -45,6 +45,6 @@ a:hover:after{
 
 /*När man hovrar över bilderna(3x3) så dyker en border upp*/
 .picDiv:hover{
-    border: 1.5px solid white;
-    transition: 0.2s;
+    border: 1px solid white;
+    transition: 0.1s;
 }

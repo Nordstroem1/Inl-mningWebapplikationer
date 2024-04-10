@@ -15,7 +15,6 @@ const wrapperTop = wrapperBounds.top;
 noBtn.addEventListener("mouseover", () => {
     const maxLeft = wrapperBounds.width - noBtn.offsetWidth;
     const maxTop = wrapperBounds.height - noBtn.offsetHeight;
-
     // Generera slumpmässiga positioner inom wrapper-elementet
     let newLeft = Math.floor(Math.random() * maxLeft);
     let newTop = Math.floor(Math.random() * maxTop);
@@ -29,9 +28,13 @@ noBtn.addEventListener("mouseover", () => {
     // Tillämpa den nya positionen på knappen
     noBtn.style.left = newLeft + "px";
     noBtn.style.top = newTop + "px";
+
+});
+
+document.addEventListener("DOMContentLoaded", function(event){
     GetLocalStorageData();
     CreateHTML();
-});
+  });
 
 yesBtn.addEventListener("click", 
     function(){
@@ -90,18 +93,16 @@ function GetLocalStorageData() {
             personList.push(dude);
         }
     }
-    console.log(personList);
 }
 
 const mainDiv = document.getElementById("divContainer");
 var created = false;
-//skapar HTML-element baserat på datan i localstorage
+//skapar HTML-element baserat på datan i personlist
 function CreateHTML(){
 
-    console.log("we are starting");
     let div;
 
-    if(created == false)
+    if(!created)
     {
         div = document.createElement("div");
         div.style.padding = "10px";
@@ -116,7 +117,6 @@ function CreateHTML(){
         div.style.overflowY = "scroll";
         
         mainDiv.appendChild(div)
-        console.log("created the div");
         created = true;
     }
     
@@ -142,6 +142,7 @@ function CreateHTML(){
 
             let button = document.createElement("button");
             button.style.borderRadius = "10px";
+            button.classList.add("remove-button");
             button.style.background = "IndianRed";
             button.innerText = "Delete";
             button.style.color = "white";
@@ -149,12 +150,26 @@ function CreateHTML(){
             button.style.width = "auto";
             button.style.height = "35px";
             button.style.gridColumn = "2";
-            button.style.cursor = "hand";
+            button.style.cursor = "pointer";
+
+            button.addEventListener("click", 
+            function RemoveObject(){
+
+                div.removeChild(container);
+
+                var elementCounter = div.childElementCount;
+                console.log("count"+ " " + elementCounter);
+
+                if(elementCounter ===0)
+                {
+                    div.remove();
+                }})
 
             container.appendChild(p);
             container.appendChild(button);
             div.appendChild(container);
         }
+
+    //räknar child-elementen av divsen(personerna) är dem färre än 1 så raderar vi diven. 
+    
 }
-
-

@@ -59,6 +59,7 @@
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
 }
+
 .btn-group{
     margin-top: 15%;
     width: 100%;
@@ -81,25 +82,13 @@ div::-webkit-scrollbar {
     display: none;
 }
 
-
-/*
-#dynamicDiv{
-    padding: 10px;
-    background-color: aliceblue;
-    width: 590px;
-    height: auto;
-    max-height: 200px;
-    border-radius: 15px;
-    border: 1px solid black;
-    margin-top: 1%;
-    overflow-y: scroll;
+#homebtn{
+    border: 0;
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    cursor: pointer;
 }
-#dynamicDiv::-webkit-scrollbar {
-    display: none;
+#homebtn img{
+    width: 60px;
 }
-
-#dynamicDiv p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 20px;
-}
-*/
