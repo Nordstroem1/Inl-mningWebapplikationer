@@ -4,5 +4,5 @@ En lärdom jag drog var att strukturen på sidan kan förenkla mycket små probl
 under utveckling av webbsidor.
 
 ![Screenshot](inlämning.screenshot.3.png)
-![Screenshot](inlämning.screenshot1.png)
 ![Screenshot](inlämning.screenshot2.png)
+![Screenshot](inlämning.screenshot1.png)
