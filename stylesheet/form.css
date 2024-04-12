@@ -8,7 +8,7 @@ body{
 
 /*kroppen av formen.*/
 form{
-    background-color: lightblue;
+    background-color: cornflowerblue;
     display: grid;
     padding: 10px;
     width: 60vw;

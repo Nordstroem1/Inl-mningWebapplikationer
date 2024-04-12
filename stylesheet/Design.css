@@ -20,6 +20,7 @@
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
+    
     animation: 
         typing 3s, 
         cursor 0.8s;
